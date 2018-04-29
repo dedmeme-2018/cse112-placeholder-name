@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>peter-demo</title>
+    <title>VueJS NodeJS and Express example</title>
+    <link type="text/css" rel="stylesheet" href="./styles/styles.css">
   </head>
-  <style>
-    .sup {
-      color: white;
-      background: red;
-      font-style : italic;
-      padding: 0 0 0 0;
-      text-decoration: none;
-      margin : auto;
-      font-size : 30px;
-      width:200px;
-    }
-
-    .ow {
-      font-family: Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      color: white;
-      -background: #4285F4;
-      padding: 20px 20px 20px 20px;
-      text-decoration: none;
-      margin : auto;
-      font-size : 40px;
-    }
-  </style>
   <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="app">
+        <div id = colorbox>
+            <coloritem v-for="item in colors" :key="item.id" v-bind:color="item.color" @get-color = "changeCurrentColor"></coloritem>
+        </div>
+
+        <div v-on:click="addMessage">moar</div>
+        <div v-on:click="removeMessage">less</div>
+
+        <!--hello world message-->
+        <h1><p v-for="item in numberOfMessages" v-bind:style="{'color': currentColor}">{{message}}</p></h1>
+    </div>
+
+
+    <script src="bundle.js"></script>
+    <!--VUE component import statements-->
+    <script src="./components/coloritem.js"></script>
+    <script src="./components/app.js"></script>
   </body>
 </html>
+
