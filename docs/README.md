@@ -1,15 +1,27 @@
 # cse112-placeholder-name
-Our CSE 112 project for Spring 2018!
 
-To run application
-- clone the repository
-- run `npm install`
-- run `node app.js` 
+> A Vue.js project
 
+## Build Setup
 
-Dev Guidelines
-- create a branch for each new feature (never push to master)
-- have reasonable comments in your code
-- always create a pull request once you're done with your feature
-- assign a team member to code review and merge the pull request once it's approved 
+``` bash
+# install dependencies
+npm install
 
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
