@@ -10,6 +10,8 @@
   </div>
 </template>
 
+
+
 <script>
 import photoshop from '../../node_modules/vue-color/src/components/Photoshop.vue'
 
@@ -40,6 +42,7 @@ let defaultProps = {
   },
   a: 1
 }
+
 
 
 export default {
@@ -95,6 +98,8 @@ export default {
   }
 }
 </script>
+
+
 
 <style>
   #app {
