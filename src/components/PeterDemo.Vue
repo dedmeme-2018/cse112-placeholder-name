@@ -14,8 +14,9 @@
 import photoshop from '../../node_modules/vue-color/src/components/Photoshop.vue'
 
 let greetStr = 'Look Peter, the component works!'
-
 let greetArr = Array(1).fill(greetStr)
+let repeatTimes = 1
+let fontColor = 0x123456
 
 let defaultProps = {
   hex: '#194d33',
@@ -40,9 +41,6 @@ let defaultProps = {
   a: 1
 }
 
-let repeatTimes = 1
-
-let fontColor = 0x123456
 
 export default {
   name: 'PeterDemo',
@@ -100,7 +98,7 @@ export default {
 
 <style>
   #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
