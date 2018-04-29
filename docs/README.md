@@ -7,7 +7,10 @@ To run application
 
 To run tests
 - run `npm install`
+#to run all tests
 - run `npm run test`
+#to run all tests with coverage report
+- run `npm run coverage`
 
 Dev Guidelines
 - create a branch for each new feature (never push to master)
