@@ -4,7 +4,7 @@
   "description": "Hello World",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,5 @@
   "homepage": "https://github.com/dedmeme-2018/cse112-placeholder-name#readme",
   "devDependencies": {
     "jest": "^22.4.3"
-  },
-  "scripts": {
-    "test": "jest"
   }
 }
