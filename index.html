@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>DEDMEME</title>
-
-        <!--development version (change to lighter version for deployment
-        to give less console log)-->
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-        <link type="text/css" rel="stylesheet" href="./styles/styles.css">
-    </head>
-
-    <body>
-        <!--root component-->
-        <div id="app">
-            <div id = colorbox>
-                <coloritem v-for="item in colors" :key="item.id" v-bind:color="item.color" @get-color = "changeCurrentColor"></coloritem>
-            </div>
-
-            <div v-on:click="addMessage">moar</div>
-            <div v-on:click="removeMessage">less</div>
-
-            <!--hello world message-->
-            <h1><p v-for="item in numberOfMessages" v-bind:style="{'color': currentColor}">{{message}}</p></h1>
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS NodeJS and Express example</title>
+    <link type="text/css" rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <div id="app">
+        <div id = colorbox>
+            <coloritem v-for="item in colors" :key="item.id" v-bind:color="item.color" @get-color = "changeCurrentColor"></coloritem>
         </div>
-    </body>
+
+        <div v-on:click="addMessage">moar</div>
+        <div v-on:click="removeMessage">less</div>
+
+        <!--hello world message-->
+        <h1><p v-for="item in numberOfMessages" v-bind:style="{'color': currentColor}">{{message}}</p></h1>
+    </div>
 
 
+    <script src="bundle.js"></script>
     <!--VUE component import statements-->
     <script src="./components/coloritem.js"></script>
     <script src="./components/app.js"></script>
-
+  </body>
 </html>
