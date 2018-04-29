@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/dedmeme-2018/cse112-placeholder-name/issues"
   },
-  "homepage": "https://github.com/dedmeme-2018/cse112-placeholder-name#readme"
+  "homepage": "https://github.com/dedmeme-2018/cse112-placeholder-name#readme",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
