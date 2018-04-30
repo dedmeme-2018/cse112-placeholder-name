@@ -2,6 +2,10 @@ language: node_js
 node_js:
 - lts/*
 - '8'
+script:
+  - "npm run coverage"
+notifications:
+   slack: "cse112sp18-team11:ilCzWpGFGum0jG5mnR6jJ0iD#notifications"
 deploy:
   provider: firebase
   token:
