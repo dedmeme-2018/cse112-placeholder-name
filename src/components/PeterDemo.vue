@@ -3,7 +3,7 @@
     <img src="../assets/dmmlogo_copy.png" style="width: 200px">
     <photoshop-picker v-model="colors" @ok="onOk" @cancel="onCancel" style="margin: auto"></photoshop-picker>
     <input @change="updateRepeat()" id="repeat_greeting" v-model="repeat_times" type="number" value="1" style="height: 50px"/>
-    <ul class="ow" :style="{color:this.colors.hex}"> 
+    <ul class="ow" :style="{color:this.colors.hex}">
       <!-- eslint-disable-next-line -->
       <li v-for="(item, index) in greet_arr" ><p > {{item}} - "{{index+1}}"</p></li>
     </ul>
