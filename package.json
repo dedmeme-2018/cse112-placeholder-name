@@ -4,7 +4,8 @@
   "description": "Hello World",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
   "homepage": "https://github.com/dedmeme-2018/cse112-placeholder-name#readme",
   "devDependencies": {
     "jest": "^22.4.3"
+  },
+  "jest": {
+    "collectCoverage": false,
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"]
   }
 }
