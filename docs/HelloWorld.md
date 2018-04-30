@@ -11,7 +11,7 @@ A Hello World example in Vue.
   <script>
     module.exports = {
       data: function () {
-        return { name: 'World' }
+        return { name: 'Peter' }
       }
     }
   </script>
