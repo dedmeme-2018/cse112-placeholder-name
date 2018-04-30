@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <HelloWorld/>
     <PeterDemo/>
   </div>
 </template>
