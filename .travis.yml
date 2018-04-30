@@ -4,6 +4,7 @@ node_js:
 - '8'
 script:
   - "npm run coverage"
+  - "npm run build"
 notifications:
    slack: "cse112sp18-team11:ilCzWpGFGum0jG5mnR6jJ0iD#notifications"
 deploy:
