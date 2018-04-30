@@ -1,6 +1,6 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+const Vue = reuqire('vue')
+const Router = require('vue-router')
+const HelloWorld = require('@/components/HelloWorld')
 
 Vue.use(Router)
 
