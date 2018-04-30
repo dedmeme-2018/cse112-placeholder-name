@@ -83,11 +83,6 @@ export default {
         this.greet_arr = Array(this.repeat_times - 1).fill(greetStr)
         this.greet_arr.push(greetStr)
       }
-
-      console.log(this.greet_arr)
-      // this.greet_arr = Array(this.repeat_times).fill(greetStr)
-      console.log(this.greet_arr)
-      console.log(this.repeat_times)
     }
   },
   created () {
