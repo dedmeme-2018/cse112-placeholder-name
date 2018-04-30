@@ -1,4 +1,4 @@
-const Vue = reuqire('vue')
+const Vue = require('vue')
 const Router = require('vue-router')
 const HelloWorld = require('@/components/HelloWorld')
 
